@@ -17,7 +17,7 @@
 			font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 		}
 		.navbar-brand{
-			font-size: 30px;
+			font-size: 35px;
 		}
 		.fa-php{
 			color: slateblue;
@@ -25,9 +25,6 @@
 		.cover{
 			background: url(img/bg.png);
 			background-size: cover;
-		}
-		.btn{
-			-webkit-appearance: none;
 		}
 	</style>
 </head>
@@ -41,7 +38,7 @@
 						data-target="#menu">	<!--collapse=折りたたむ ->#menu属性の要素を指定-->
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div id="menu" class="collapse navbar-collapse h4 mb-0">
+				<div id="menu" class="collapse navbar-collapse h3 mb-0">
 					<ul class="navbar-nav">
 						<li class="nav-item"><a href="" class="nav-link">Profile</a></li>
 						<li class="nav-item"><a href="" class="nav-link">Study</a></li>
@@ -92,17 +89,15 @@
 			</div>
 			<div class="text-center mb-5">
 				<p class="h3 mb-3">フロントエンド</p>
-				<div class="row d-flex justify-content-center m-2">
-					<i class="fab fa-html5 mx-3 fa-4x text-danger">
-						<p class="h4">HTML</p>
-					</i>
-					<i class="fab fa-css3-alt mx-3 fa-4x text-primary">
-						<p class="h4">CSS</p>
-					</i>
-					<i class="fab fa-js-square mx-3 fa-4x text-warning">
-						<p class="h6 mt-2">JavaScript</p>
-					</i>
-				</div>
+				<i class="fab fa-html5 mx-3 fa-4x text-danger">
+					<p class="h4">HTML</p>
+				</i>
+				<i class="fab fa-css3-alt mx-3 fa-4x text-primary">
+					<p class="h4">CSS</p>
+				</i>
+				<i class="fab fa-js-square mx-3 fa-4x text-warning">
+					<p class="h6 mt-2">JavaScript</p>
+				</i>
 			</div>
 		</section>
 
@@ -113,7 +108,7 @@
 						<div class="card card-body">
 							<i class="far fa-hand-lizard fa-4x d-flex justify-content-center mb-2"></i>
 							<h4 class="card-title text-center">数字くじ</h4>
-							<p class="card-text">BINGOの数字抽選をイメージして作成。JSの関数を使用したHTML要素の追加やインターバル処理を勉強できた。</p>
+							<p class="card-text">JSの関数を使用したHTML要素の追加やインターバル処理を勉強できた。</p>
 							<div class="text-center">
 								<a href="https://naitoyuma3230.github.io/NumberPick/" type="button" class="btn btn-primary">View Demo</a>
 								<a href="https://github.com/naitoyuma3230/NumberPick" type="button" class="btn btn-secondary text-white">View Code</a>
@@ -124,10 +119,28 @@
 						<div class="card card-body">
 							<i class="far fa-keyboard fa-4x d-flex justify-content-center mb-2"></i>
 							<h4 class="card-title text-center">Typing Game</h4>
-							<p class="card-text">寿司打をイメージして作成。問題の英単語の表示や正誤判定を実装する中で配列操作を勉強できた。</p>
+							<p class="card-text">問題の英単語の表示や正誤判定を実装する中で配列操作を勉強できた。</p>
 							<div class="text-center">
 								<a href="https://naitoyuma3230.github.io/TypingGame/." type="button" class="btn btn-primary">View Demo</a>
 								<a href="https://github.com/naitoyuma3230/TypingGame" type="button" class="btn btn-secondary text-white">View Code</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mb-2">
+			<div class="mx-3">
+				<div class="row">
+					<div class="col-sm-6 mb-4">
+						<div class="card card-body">
+							<div class="fas fa-sort-numeric-up-alt fa-4x d-flex justify-content-center mb-2"></div>
+							<h4 class="card-title text-center">Number Toch</h4>
+							<p class="card-text">数字タッチゲーム。クラスを使ってプロパティやメソッドの管理をした。</p>
+							<div class="text-center">
+								<a href="https://naitoyuma3230.github.io/NumberTouch/" type="button" class="btn btn-primary">View Demo</a>
+								<a href="https://github.com/naitoyuma3230/NumberTouch" type="button" class="btn btn-secondary text-white">View Code</a>
 							</div>
 						</div>
 					</div>
@@ -138,17 +151,15 @@
 		<section>
 			<div class="text-center my-5">
 				<p class="h4 mb-3">JavaScriptライブラリ</p>
-				<div class="row d-flex justify-content-center m-2">
-					<i class="fab fa-bootstrap text-danger mx-3 fa-4x">
-						<p class="h5">Bootstrap</p>
-					</i>
-					<i class="fab fa-react text-primary mx-3 fa-4x">
-						<p class="h5">React.js</p>
-					</i>
-					<i class="far fa-chart-bar text-warning mx-3 fa-4x">
-						<p class="h5">Chart.js</p>
-					</i>
-				</div>
+				<i class="fab fa-bootstrap text-danger mx-3 fa-4x">
+					<p class="h4">Bootstrap</p>
+				</i>
+				<i class="fab fa-react text-primary mx-3 fa-4x">
+					<p class="h4">React.js</p>
+				</i>
+				<i class="far fa-chart-bar text-warning mx-3 fa-4x">
+					<p class="h4">Chart.js</p>
+				</i>
 			</div>
 		</section>
 
@@ -170,7 +181,7 @@
 					<div class="card card-body">
 						<i class="far fa-list-alt fa-4x d-flex justify-content-center mb-2"></i>
 						<h4 class="card-title text-center">To-doリスト</h4>
-						<p class="card-text">React.jsを使用しUIを作成した。リストの追加、削除、実施済チェック、一括削除機能を実装した。リストの保存はブラウザストレージを使用した。</p>
+						<p class="card-text">React.jsを使用しUIを作成した。リストの追加、削除、実施済チェック、一括削除機能を実装した。</p>
 						<div class="text-center">
 							<a href="https://naitoyuma3230.github.io/Todolist/" type="button" class="btn btn-primary">View Demo</a>
 							<a href="https://github.com/naitoyuma3230/Todolist" type="button" class="btn btn-secondary text-white">View Code</a>
@@ -184,17 +195,15 @@
 	<section>
 		<div class="text-center my-5">
 			<p class="h2 mb-3">バックエンド</p>
-			<div class="row d-flex justify-content-center m-2">
-				<i class="fab fa-php mx-3 fa-4x">
-					<p class="h4">PHP</p>
-				</i>
-				<i class="fab fa-centos mx-3 fa-4x text-success">
-					<p class="h4">CentOS</p>
-				</i>
-				<i class="fas fa-database mx-3 fa-4x text-primary">
-					<p class="h4">MySql</p>
-				</i>
-			</div>
+			<i class="fab fa-php mx-3 fa-4x">
+				<p class="h4">PHP</p>
+			</i>
+			<i class="fab fa-centos mx-3 fa-4x text-success">
+				<p class="h4">CentOS</p>
+			</i>
+			<i class="fas fa-database mx-3 fa-4x text-primary">
+				<p class="h4">MySql</p>
+			</i>
 		</div>
 	</section>
 
@@ -229,23 +238,21 @@
 
 	<section>
 		<div class="text-center my-5">
-		<p class="h2 mb-3">作成中・勉強中</p>
-		<div class="row d-flex justify-content-center m-2">
-			<i class="fab fa-laravel text-danger fa-4x mr-2">
+			<p class="h2 mb-3">勉強中の言語</p>
+				<i class="fab fa-laravel text-danger fa-4x mr-2">
 				<p class="h4">Laravel</p>
-			</i>
-			<i class="fab fa-aws text-warning fa-4x mr-1">
-				<p class="h6">Amazon Web Service</p>
-			</i>
-			<i class="fab fa-wordpress-simple text-primary fa-4x">
-				<p class="h5">Word Press</p>
-			</i>
-		</div>
+				</i>
+		<i class="fab fa-aws text-warning fa-4x mr-1">
+			<p class="h6">Amazon Web Service</p>
+		</i>
+		<i class="fab fa-wordpress-simple text-primary fa-4x">
+			<p class="h5">Word Press</p>
+		</i>
 	</div>
 	</section>
 
 	<section>
-		<div class="col-sm-6 mb-4">
+		<div class="col-sm-6 mb-5">
 			<div class="card card-body">
 				<i class="fa fa-home fa-4x d-flex justify-content-center mb-2"></i>
 				<h4 class="card-title text-center">ホームページ作成</h4>
@@ -256,11 +263,41 @@
 			</div>
 		</div>
 	</section>
-	
-
 	</main>
 
-
+	<section>
+		<footer id="contact" class="footer text-center">
+			<div class="container text-center">
+				<div class="d-flex justify-content-center border-bottom-dark">
+					<p class="display-4 mb-5"><span class="border-bottom border-secondary">Contact</span></p>
+				</div>
+			<ul class="list-inline my-5">
+				<li class="list-inline-item">
+					<a class="contact-icon rounded-circle mx-3" href="#">
+						<i class="far fa-envelope fa-3x"></i>
+					</a>
+				</li>
+				<!-- twitter -->
+					<li class="list-inline-item">
+						<a
+						class="contact-icon rounded-circle mx-3"
+						href="#"
+						target="_blank"
+					>
+					<i class="fab fa-twitter fa-3x"></i>
+				</a>
+			</li>
+				<li class="list-inline-item">
+					<a class="contact-icon rounded-circle mx-3" href="https://github.com/naitoyuma3230" target="_blank">
+						<i class="fab fa-github fa-3x"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	</section>
+	
+	
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
