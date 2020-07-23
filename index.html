@@ -180,21 +180,40 @@
 						<div class="card card-body">
 							<i class="fas fa-tachometer-alt fa-4x d-flex justify-content-center mb-2"></i>
 							<h4 class="card-title text-center">Accel-Gyro Sensor</h4>
-							<p class="card-text">スマホに内臓された加速度とジャイロセンサーの値を取得しCSV形式で出力します。またChart.jsを使用し計測値をリアルタイムでグラフ化する機能を実装しました。プログラムを学習した最初の目的はこのアプリの作成でした。学び続けると実現できる事を知りました。</p>
+							<p class="card-text">スマホに内臓された加速度とジャイロセンサーの値を取得しCSV形式で出力します。またChart.jsを使用し計測値をリアルタイムでグラフ化する機能を実装しました。プログラムを学習した最初の目的はこのアプリの作成でした。</p>
 							<div class="text-center">
 								<a href="https://naitoyuma3230.github.io/acceleration/index.html" type="button" class="btn btn-primary">View Demo</a>
 								<a href="https://github.com/naitoyuma3230/acceleration" type="button" class="btn btn-secondary text-white">View Code</a>
 							</div>
 						</div>
 					</div>
+					<div class="col-sm-6 mb-4">
+						<div class="card card-body">
+							<i class="far fa-list-alt fa-4x d-flex justify-content-center mb-2"></i>
+							<h4 class="card-title text-center">To-doリスト</h4>
+							<p class="card-text">少し触る程度ですがReact.jsを使用しました。関数でUIパーツを管理できることに特徴を感じました。フレームワークを使うと便利な機能を簡単に実装できそうですが、フレームワーク内部でどんな処理が行われているか理解する必要を感じました。</p>
+							<div class="text-center">
+								<a href="https://naitoyuma3230.github.io/Todolist/" type="button" class="btn btn-primary">View Demo</a>
+								<a href="https://github.com/naitoyuma3230/Todolist" type="button" class="btn btn-secondary text-white">View Code</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<!-- front library container2 -->
+	<section class="mb-2">
+		<div class="mx-3">
+			<div class="row">
 				<div class="col-sm-6 mb-4">
 					<div class="card card-body">
-						<i class="far fa-list-alt fa-4x d-flex justify-content-center mb-2"></i>
-						<h4 class="card-title text-center">To-doリスト</h4>
-						<p class="card-text">React.jsを使用しました。関数でUserInterfaceをパーツ毎に管理できることに特徴を感じましたが、少し触る程度でまだ学ぶ余地が多いです。フレームワークを使用する事で、便利な機能を少ないコードで実装できそうですが、内部ではかなり複雑な処理が行われている事を知りました。</p>
+						<i class="far fa-address-card fa-4x d-flex justify-content-center mb-2"></i>
+						<h4 class="card-title text-center">Portfolio</h4>
+						<p class="card-text">このポートフォリオのコーティングはBootstrapを使用しました。デザインの知識がない僕にはとても便利なフレームワークでしたが、細部の表現はCSSを勉強する必要があると感じました。
 						<div class="text-center">
-							<a href="https://naitoyuma3230.github.io/Todolist/" type="button" class="btn btn-primary">View Demo</a>
-							<a href="https://github.com/naitoyuma3230/Todolist" type="button" class="btn btn-secondary text-white">View Code</a>
+							<a href="https://naitoyuma3230.github.io/NumberTouch/" type="button" class="btn btn-primary">View Demo</a>
+							<a href="https://github.com/naitoyuma3230/NumberTouch" type="button" class="btn btn-secondary text-white">View Code</a>
 						</div>
 					</div>
 				</div>
@@ -203,18 +222,34 @@
 	</section>
 
 	<!-- backend -->
-	<section>
+	<!-- <section>
 		<div class="text-center my-5">
-			<p class="h2 mb-3">バックエンド</p>
+			<p class="h3 mb-3">バックエンド</p>
 			<i class="fab fa-php mx-3 fa-4x">
 				<p class="h4">PHP</p>
 			</i>
 			<i class="fab fa-centos mx-3 fa-4x text-success">
-				<p class="h4">CentOS</p>
+				<p class="h4">Linux</p>
 			</i>
 			<i class="fas fa-database mx-3 fa-4x text-primary">
 				<p class="h4">MySql</p>
 			</i>
+		</div>
+	</section> -->
+
+	<section>
+		<div class="text-center my-5">
+			<p class="h3 mb-3">バックエンド</p>
+			<i class="fab fa-php mx-3 fa-3x">
+				<p class="h5">PHP</p>
+			</i>
+			<i class="fa fa-linux mx-3 fa-3x">
+				<p class="h5">Linux</p>
+			</i>
+			<i class="fas fa-database mx-3 fa-3x text-primary">
+				<p class="h5">MySql</p>
+			</i>
+			<i class="fab fa-aws text-warning fa-3x"><p class="h5">EC2</p></i>
 		</div>
 	</section>
 
@@ -226,7 +261,7 @@
 					<div class="card card-body">
 						<i class="fas fa-chalkboard-teacher fa-4x d-flex justify-content-center mb-2"></i>
 						<h4 class="card-title text-center">ひとこと掲示板</h4>
-						<p class="card-text">Linux開発環境の構築やデータベース設定、PHPの基礎を勉強しました。</p>
+						<p class="card-text">LinuxやMySQLデータベース、PHPの基礎を勉強しました。ローカル開発環境の構築はVirtualBoxとVagrantを使用し、本番環境はEC2でAmazon Linuxを使用しました。環境構築に苦戦し正直理解が追いつかない場面が多かったですが、基本的な掲示板機能は実装できました。</p>
 						<div class="text-center">
 							<button type="button" class="btn btn-primary">View Demo</button>
 							<a type="button" class="btn btn-secondary text-white">View Code</a>
@@ -237,10 +272,10 @@
 					<div class="card card-body">
 						<i class="fab fa-accusoft fa-4x d-flex justify-content-center mb-2"></i>
 						<h4 class="card-title text-center">ジャーナル投稿フォーム</h4>
-						<p class="card-text">小規模グループで学会発表の内容を共有する事を目標に、ログイン機能、ユーザー登録、ジャーナル投稿など簡易なプラットフォームを作成しました。バックエンドでできる事を知った時、制作を目指したのがこのWebアプリでした。</p>
+						<p class="card-text">小規模グループで学会発表の内容を共有する事を目標にログイン機能、投稿機能などを実装した簡易プラットフォームを作成しました。SESSIONを使用してユーザーからの入力を処理する中でXSS対策などのセキュリティを知りました。様々な役割のPHPファイルを作成しましたが、できるだけMVCに機能分化できるよう努めました。</p>
 						<div class="text-center">
-							<a href="54.178.49.51/views" type="button" class="btn btn-primary">View Demo</a>
-							<a type="button" class="btn btn-secondary text-white">View Code</a>
+							<a href="http://54.178.49.51/index.php" type="button" class="btn btn-primary">View Demo</a>
+							<a href="https://github.com/naitoyuma3230/AcademicPresentasion" type="button" class="btn btn-secondary text-white">View Code</a>
 						</div>
 					</div>
 				</div>
@@ -285,17 +320,17 @@
 
 	<!-- expection container -->
 	<section>
-		<div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="accordion mb-5" id="accordion" role="tablist" aria-multiselectable="true">
 			<div class="card">
 				<div class="card-header" role="tab" id="headingOne">
 					<h5 class="mb-0">
-						<a class="text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+						<a class="text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
 							<!-- アイテム1 -->
 							最初のプログラム
 						</a>
 					</h5>
 				</div><!-- /.card-header -->
-				<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+				<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
 					<div class="card-body">
 						<!-- アイテム1のコンテンツ -->
 						<p>
@@ -311,7 +346,7 @@
 					<h5 class="mb-0">
 						<a class="collapsed text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
 							<!-- アイテム2 -->
-							プログラマー志望のきっかけ
+							本格的な学習のきっかけ
 						</a>
 					</h5>
 				</div><!-- /.card-header -->
@@ -319,7 +354,7 @@
 					<div class="card-body">
 						<!-- アイテム2のコンテンツ -->
 						<p>
-							
+							こんな感じのきっかけですこんな感じのきっかけですこんな感じのきっかけですこんな感じのきっかけですこんな感じのきっかけですこんな感じのきっかけですこんな感じのきっかけですこんな感じのきっかけです。
 						</p>
 					</div><!-- /.card-body -->
 				</div><!-- /.collapse -->
@@ -328,13 +363,15 @@
 				<div class="card-header" role="tab" id="headingThree">
 					<h5 class="mb-0">
 						<a class="collapsed text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-							アイテム3
+							プログラマーへの転職志望
 						</a>
 					</h5>
 				</div><!-- /.card-header -->
 				<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
 					<div class="card-body">
-						アイテム3のコンテンツ
+						<p>
+							こんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いですこんな思いです。
+						</p>
 					</div><!-- /.card-body -->
 				</div><!-- /.collapse -->
 			</div><!-- /.card -->
