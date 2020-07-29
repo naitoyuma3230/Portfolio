@@ -489,7 +489,7 @@
 				<div class="form-group">
 					<label class="col-sm-3 control-label" for="name1">お名前</label>
 					<div class="col-sm-6">
-						<input type="text" class="form-control" id="validationDefault01" placeholder="名前" required name="entry.63309754" required>
+						<input type="text" class="form-control" placeholder="名前" name="entry.63309754" required>
 					</div>
 				</div>
 
@@ -566,7 +566,6 @@
 		$(function() {
     $('#form').submit(function(e) {
 			$('.btn-send').prop('disabled', true);
-			$('#form')[0].reset();
 			$('#modalbtn').click();
     });
   });
