@@ -96,10 +96,10 @@
 			<div class="text-center mb-5">
 				<p class="h3 mb-3">フロントエンド</p>
 				<i class="fab fa-html5 mx-3 fa-4x text-danger">
-					<p class="h4">HTML</p>
+					<p class="h4">HTML5</p>
 				</i>
 				<i class="fab fa-css3-alt mx-3 fa-4x text-primary">
-					<p class="h4">CSS</p>
+					<p class="h4">CSS3</p>
 				</i>
 				<i class="fab fa-js-square mx-3 fa-4x text-warning">
 					<p class="h6 mt-2">JavaScript</p>
@@ -460,19 +460,15 @@
 						<i class="far fa-envelope fa-3x"></i>
 					</a>
 				</li>
-				<!-- twitter -->
-				<!-- <li class="list-inline-item">
-					<a
-					class="contact-icon btn text-primary rounded-circle mx-3"
-					href="#"
-					target="_blank"
-					>
-					<i class="fab fa-twitter fa-3x"></i>
-				</a>
+				<!-- twitter
+				<li class="list-inline-item btn text-primary" data-toggle="collapse" data-target="#comment-form" aria-expanded="false" aria-controls="comment-form">
+					<a class="contact-icon rounded-circle mx-3">
+						<i class="fas fa-code fa-3x"></i>
+					</a>
 				</li> -->
 				<!-- Github -->
-				<li class="list-inline-item">
-					<a class="contact-icon btn text-primary rounded-circle mx-3" href="https://github.com/naitoyuma3230" target="_blank">
+				<li class="list-inline-item btn text-primary">
+					<a class="contact-icon rounded-circle mx-3" href="https://github.com/naitoyuma3230?tab=repositories" target="_blank">
 						<i class="fab fa-github fa-3x"></i>
 					</a>
 				</li>
@@ -531,7 +527,7 @@
 								</button>
 							</div>
 							<div class="modal-body">
-								Massage is sent to 【naitowork@outlook.jp】
+								Massage is sent to 【naitojob@outlook.jp】
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
@@ -539,19 +535,73 @@
 						</div>
 					</div>
 				</div>
-
 		</form>
-		<!-- ページ遷移先のiframe -->
+
+		<!-- 問い合わせフォームページ遷移先のiframe -->
 		<iframe name="send" style="width:0px;height:0px;border:0px;"></iframe>
 	</div>
 	</div>
 </section>
 
-<footer class="mb-5">
-	<h1 class="text-center">naitoyuma</h1>
+<!-- 掲示板折り畳み -->
+<div class="collapse" id="comment-form">
+	<div class="card card-body border-light">
+		<form action="" class="form-horizontal" id="form" method="post" target="send">
+			<p class="h4 col mb-4 text-center">コメント一覧</p>
+			
+			<!-- name -->
+			<div class="form-group">
+				<label class="col-sm-3 control-label" for="name1">お名前</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" placeholder="名前" name="entry.63309754" required>
+				</div>
+			</div>
+	
+			<!-- body -->
+			<div class="form-group">
+				<label class="col-sm-12 control-label" for="ask1">お問い合わせ内容</label>
+				<div class="col-sm-12">
+					<textarea rows="7" name="entry.450188210" placeholder="ご自由にご記載下さい。" class="form-control" required></textarea>
+				</div>
+			</div>
+			<!-- submit -->
+			<div class="form-group">
+				<div class="col-sm-12 text-center">
+					<button class="btn btn-light btn-send" type="submit" name="button">送信する</button>
+				</div>
+			</div>
+
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" id="modalbtn" style="display:none" data-target="#exampleModal">
+				不可視ボタン
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">送信完了</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							Massage is sent to 【naitojob@outlook.jp】
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	</form>
+</main>
+
+<footer class="mb-5 bg-secondary text-white py-3">
+	<h3 class="text-center">Thank you for watching</h3>
 </footer>
 
-</main>
 
 
 
