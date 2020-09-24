@@ -29,6 +29,9 @@
 		.btn{
 			-webkit-appearance: none;
 		}
+		.dropdown:hover{
+			display: block;
+		}
 	</style>
 </head>
 <body>
@@ -134,10 +137,12 @@
 				<div class="row">
 					<div class="col-sm-6 mb-4">
 						<div class="card card-body dark">
-							<i class="far fa-hand-lizard fa-4x d-flex justify-content-center mb-2"></i>
-							<h4 class="card-title text-center">数字くじ</h4>
-							<p class="btn text-secondary ml-4 mb-4" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-							Open Comment...<i class="far fa-hand-point-down"></i></p>
+							<div class="btn dropdown" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1">
+								<i class="far fa-hand-lizard fa-4x d-flex justify-content-center mb-2"></i>
+								<h4 class="card-title text-center">数字くじ</h4>
+								<p class="text-secondary ml-4 mb-4">
+									Open Comment...<i class="far fa-hand-point-down"></i></p>
+							</div>
 									
 							<div class="collapse" id="collapseExample1">
 								<div class="card card-body border-light">
@@ -152,9 +157,12 @@
 					</div>
 					<div class="col-sm-6 mb-4">
 						<div class="card card-body">
-							<i class="far fa-keyboard fa-4x d-flex justify-content-center mb-2"></i>
-							<h4 class="card-title text-center">Typing Game</h4>
-							<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">Open Comment... <i class="far fa-hand-point-down"></i></p>
+							<div class="btn dropdown" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="true" aria-controls="collapseExample2">
+								<i class="far fa-keyboard fa-4x d-flex justify-content-center mb-2"></i>
+								<h4 class="card-title text-center">Typing Game</h4>
+								<p class="text-secondary ml-4 mb-4">Open Comment... <i class="far fa-hand-point-down"></i></p>
+							</div>
+
 							<div class="collapse" id="collapseExample2">
 								<div class="card card-body border-light">
 									<p class="card-text">お手本を元に作成しましたがキーボード入力値の取得や正誤判定、配列操作に多くの関数を使用し難解でした。日々使用している便利なアプリもシンプルな処理が積み重なる事により、複雑で多彩な機能を実現している事を知りました。</p>
@@ -176,9 +184,11 @@
 				<div class="row">
 					<div class="col-sm-6 mb-4">
 						<div class="card card-body">
-							<div class="fas fa-sort-numeric-up-alt fa-4x d-flex justify-content-center mb-2"></div>
-							<h4 class="card-title text-center">Number Toch</h4>
-							<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">Open Comment...<i class="far fa-hand-point-down"></i></p>
+							<div class="btn dropdown" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="true" aria-controls="collapseExample3">
+								<div class="fas fa-sort-numeric-up-alt fa-4x d-flex justify-content-center mb-2"></div>
+								<h4 class="card-title text-center">Number Toch</h4>
+								<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">Open Comment...<i class="far fa-hand-point-down"></i></p>
+							</div>
 							<div class="collapse" id="collapseExample3">
 								<div class="card card-body border-light">
 									<p class="card-text">クラスを用いてプロパティとメソッドを管理する事で、オブジェクト指向の概念を少しだけ知ることができました。クラスを実装する際コードが余計複雑になっているように感じましたが、クラス内のメソッドやプロパティの目的は明確になるように感じました。</p>
@@ -219,10 +229,12 @@
 				<div class="row">
 					<div class="col-sm-6 mb-4">
 						<div class="card card-body">
-							<i class="fas fa-tachometer-alt fa-4x d-flex justify-content-center mb-2"></i>
-							<h4 class="card-title text-center">Accel-Gyro Sensor</h4>
-							<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">Open Comment...<i class="far fa-hand-point-down"></i></p>
-							<div class="collapse" id="collapseExample4">
+							<div class="btn dropdown" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="true" aria-controls="collapseExample4">
+								<i class="fas fa-tachometer-alt fa-4x d-flex justify-content-center mb-2"></i>
+								<h4 class="card-title text-center">Accel-Gyro Sensor</h4>
+								<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">Open Comment...<i class="far fa-hand-point-down"></i></p>
+							</div>
+								<div class="collapse" id="collapseExample4">
 								<div class="card card-body border-light">
 									<p class="card-text">スマホに内臓された加速度とジャイロセンサーの値を取得しCSV形式で出力します。またChart.jsを使用し計測値をリアルタイムでグラフ化する機能を実装しました。プログラムを学習した最初の目的はこのアプリの作成でした。</p>
 								</div>
@@ -236,9 +248,11 @@
 					</div>
 					<div class="col-sm-6 mb-4">
 						<div class="card card-body">
-							<i class="far fa-list-alt fa-4x d-flex justify-content-center mb-2"></i>
-							<h4 class="card-title text-center">To-doリスト</h4>
-							<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">Open Comment...<i class="far fa-hand-point-down"></i></p>
+							<div class="btn dropdown" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="true" aria-controls="collapseExample5">
+								<i class="far fa-list-alt fa-4x d-flex justify-content-center mb-2"></i>
+								<h4 class="card-title text-center">To-doリスト</h4>
+								<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">Open Comment...<i class="far fa-hand-point-down"></i></p>
+							</div>
 							<div class="collapse" id="collapseExample5">
 								<div class="card card-body border-light">
 									<p class="card-text">少し触る程度ですがReact.jsを使用しました。関数でUIパーツを管理できることに特徴を感じました。フレームワークを使うと便利な機能を簡単に実装できそうですが、フレームワーク内部でどんな処理が行われているか理解する必要を感じました。</p>
@@ -260,9 +274,11 @@
 			<div class="row">
 				<div class="col-sm-6 mb-4">
 					<div class="card card-body">
-						<i class="far fa-address-card fa-4x d-flex justify-content-center mb-2"></i>
-						<h4 class="card-title text-center">Portfolio</h4>
-						<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">Open Comment...<i class="far fa-hand-point-down"></i></p>
+						<div class="btn dropdown" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="true" aria-controls="collapseExample6">
+							<i class="far fa-address-card fa-4x d-flex justify-content-center mb-2"></i>
+							<h4 class="card-title text-center">Portfolio</h4>
+							<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">Open Comment...<i class="far fa-hand-point-down"></i></p>
+						</div>
 						<div class="collapse" id="collapseExample6">
 							<div class="card card-body border-light">
 								<p class="card-text">このポートフォリオのコーディングはBootstrapを使用しました。デザインの知識がない僕にはとても便利なフレームワークでしたが、細部の変更はCSSの勉強が必要と感じました。お問い合わせはGoogleフォームを使用しました。</p>
@@ -316,9 +332,11 @@
 			<div class="row">
 				<div class="col-sm-6 mb-4">
 					<div class="card card-body">
-						<i class="fas fa-chalkboard-teacher fa-4x d-flex justify-content-center mb-2"></i>
-						<h4 class="card-title text-center">ひとこと掲示板</h4>
-						<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">Open Comment...<i class="far fa-hand-point-down"></i></p>
+						<div class="btn dropdown" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="true" aria-controls="collapseExample7">
+							<i class="fas fa-chalkboard-teacher fa-4x d-flex justify-content-center mb-2"></i>
+							<h4 class="card-title text-center">ひとこと掲示板</h4>
+							<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">Open Comment...<i class="far fa-hand-point-down"></i></p>
+						</div>
 						<div class="collapse" id="collapseExample7">
 							<div class="card card-body border-light">
 								<p class="card-text">Linux、MySQLデータベース、PHPの基礎を勉強しました。ローカル開発環境の構築はVirtualBoxとVagrantを使用し、本番環境はEC2、Amazon Linuxを使用しました。コマンドを使用したPHP、MySQLの環境構築やデータベース設定に苦戦し正直理解が追いつかない場面が多かったですが、基本的な掲示板機能は実装できました。AWSを勉強後、XserverからEC2へ移動しました。</p>
@@ -332,9 +350,11 @@
 				</div>
 				<div class="col-sm-6 mb-4">
 					<div class="card card-body">
-						<i class="fab fa-accusoft fa-4x d-flex justify-content-center mb-2"></i>
-						<h4 class="card-title text-center">ジャーナル投稿フォーム</h4>
-						<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">Open Comment...<i class="far fa-hand-point-down"></i></p>
+						<div class="btn dropdown" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="true" aria-controls="collapseExample8">
+							<i class="fab fa-accusoft fa-4x d-flex justify-content-center mb-2"></i>
+							<h4 class="card-title text-center">ジャーナル投稿フォーム</h4>
+							<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">Open Comment...<i class="far fa-hand-point-down"></i></p>
+						</div>
 						<div class="collapse" id="collapseExample8">
 							<div class="card card-body border-light">
 								<p class="card-text">小規模グループで学会発表の内容を共有する事を目標にログイン機能、投稿機能などを実装した簡易プラットフォームを作成しました。SESSIONを使用してユーザーからの入力を処理する中でXSS対策などのセキュリティを知りました。様々な役割のPHPファイルを作成しましたが、できるだけMVCに機能分化できるよう努めました。<br><a href="http://naitoyuma.php.xdomain.jp/pt_uploader/views/index.php">普段はAWS料金節約のためサーバーを起動していないためこちらを参照</a></p>
@@ -366,9 +386,11 @@
 			<div class="row">
 				<div class="col-sm-6 mb-5">
 					<div class="card card-body">
-						<i class="fa fa-home fa-4x d-flex justify-content-center mb-2"></i>
-						<h4 class="card-title text-center">ホームページ作成</h4>
-						<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9">Open Comment...<i class="far fa-hand-point-down"></i></p>
+						<div class="btn dropdown" data-toggle="collapse" data-target="#collapseExample9" aria-expanded="true" aria-controls="collapseExample9">
+							<i class="fa fa-home fa-4x d-flex justify-content-center mb-2"></i>
+							<h4 class="card-title text-center">ホームページ作成</h4>
+							<p class="btn text-secondary ml-4 mb-4" type="button" data-toggle="collapse" data-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9">Open Comment...<i class="far fa-hand-point-down"></i></p>
+						</div>
 						<div class="collapse" id="collapseExample9">
 							<div class="card card-body border-light">
 								<p class="card-text">理学療法士の勉強会グループ用ホームページをWordPressを使用して作成中。デモのため架空の内容です。</p>
