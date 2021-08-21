@@ -47,10 +47,10 @@
 				</button>
 				<div id="menu" class="collapse navbar-collapse mb-0">
 					<ul class="navbar-nav">
-						<li class="nav-item"><a href="" class="nav-link">Profile</a></li>
-						<li class="nav-item"><a href="" class="nav-link">About me</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Study</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Link</a></li>
+						<li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+						<li class="nav-item"><a href="#aboutme" class="nav-link">About me</a></li>
+						<li class="nav-item"><a href="#study" class="nav-link">Study</a></li>
+						<li class="nav-item"><a href="#notice" class="nav-link">Link</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -64,17 +64,25 @@
 	<main>
 		<!-- profile -->
 		<section>
-			<div class="d-flex justify-content-center border-bottom-dark">
+			<div id="profile" class="d-flex justify-content-center border-bottom-dark">
 				<!-- <i class="far fa-address-card fa-4x mx-3"></i> -->
 				<p class="display-4 mb-5"><span class="border-bottom border-danger">Profile</span></p>
 			</div>
 			<div class="container mb-5">
 				<div class="row">
 			<!-- image -->
-			<div id="carouselExampleSlidesOnly" class="carousel slide col-4" data-ride="carousel">
+			<div class="carousel slide col-4">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="d-block  w-100 rounded-circle" src="img/profile.jpg" alt="First slide">
+						<img class="d-block  w-100 rounded-circle" src="img/profile.png" alt="First slide">
+					</div>
+				</div>
+			</div>
+			<!-- image-slide -->
+			<!-- <div id="carouselExampleSlidesOnly" class="carousel slide col-4" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block  w-100 rounded-circle" src="img/profile.png" alt="First slide">
 					</div>
 					<div class="carousel-item">
 						<img class="d-block w-100" src="img/profile2.jpg" alt="Second slide">
@@ -86,7 +94,7 @@
 						<img class="d-block w-100 rounded-circle" src="img/profile4.jpg" alt="Third slide">
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 
 					<!-- <div class="col-4">
@@ -112,7 +120,7 @@
 
 		<!-- about me -->
 		<section>
-			<div class="d-flex justify-content-center">
+			<div id="aboutme" class="d-flex justify-content-center">
 				<!-- <i class="fas fa-feather-alt fa-4x mx-3"></i> -->
 				<p class="display-4 mb-5"><span class="border-bottom border-primary">About me</span></p>
 			</div>
@@ -132,7 +140,7 @@
 						</tr>
 						<tr>
 							<th scope="row">2014</th>
-							<th>聖稜リハビリテーション入職</th>
+							<th>聖稜リハビリテーション病院　入職</th>
 						</tr>
 						<tr>
 							<th scope="row"></th>
@@ -162,7 +170,8 @@
 						</tr>
 						<tr>
 							<th scope="row"></th>
-							<td>講演演題「転倒回避の文献から得た知見～バランス機能のバイオメカニクス～」<br>
+							<td>講演演題「転倒回避の文献から得た知見<br>
+									～バランス機能のバイオメカニクス～」<br>
 								<a href="https://naitoyuma3230.github.io/Portfolio/word-excel/power2.pdf" class="btn btn-outline-danger btn-sm">PDF</a>
 							</td>
 						</tr>
@@ -179,7 +188,7 @@
 						</tr>
 						<tr>
 							<th scope="row">転職<br>開始</th>
-							<th>症例発表ではスマホの加速度センサーを取得するアプリを作製し重心動揺を計測<br>
+							<th>症例発表でスマホの加速度センサーを取得するアプリを作製し重心動揺を計測した経験から<br>
 									IT分野への強い関心を持ち転職活動を開始する
 							</th>
 						</tr>
@@ -196,12 +205,104 @@
 			</div>
 			<div class="text-center mb-5">
 				<p class="h3 mb-3">資格</p>
+				<h4>・理学療法士国家資格</h4>
+				<h4>・基本情報技術者資格</h4>
 			</div>
 		</section>
 
+			<!-- Notice -->
+	<section>
+		<div id="notice" class="footer text-center mb-1">
+			<div class="container text-center">
+				<div class="d-flex justify-content-center border-bottom-dark">
+					<p class="display-4 mb-3"><span class="border-bottom border-success">NOTICE</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Notice icon -->
+	<section>
+		<div class="d-flex m-0 align-items-end">
+			<i class="fas fa-hiking fa-4x mx-4"></i>
+		</div>
+	</section>
+
+	<!-- expection container -->
+	<section>
+		<div class="accordion mb-5" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="card">
+				<div class="card-header" role="tab" id="headingOne">
+					<h5 class="mb-0">
+						<a class="text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+							<!-- アイテム1 -->
+							最初のプログラム
+						</a>
+					</h5>
+				</div><!-- /.card-header -->
+				<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+					<div class="card-body">
+						<!-- アイテム1のコンテンツ -->
+						<p>
+							<span class="d-block mb-1">　最初にプログラムを勉強したのは6年前、業務時間を短縮するためにVBA言語を使用した患者スケジュールの自動作成マクロを組もうと試みた時でした。</span><br>
+							<span class="d-block mb-1">　僕は単調な繰り返し作業が嫌いで、「この面倒な作業を短縮できるのならどれだけ時間を費やしてもかまわない。」と思いマクロとVBAの勉強をしたのですが、抽象的な要素が大きく関わり、なおかつ1週間ごとのイベントを手作業でインプットする必要があるため自動化できる行程が少なく断念しました。</span><br>
+							<span>　業務時間の短縮という目的は達成できませんでしたが、情報技術を学べば決められた行程を繰り返す作業は全てプログラムに置き換えられると感じました。</span>
+						</p>
+					</div><!-- /.card-body -->
+					<section><!-- Notice icon -->
+						<div class="d-flex mb-0 align-items-end">
+							<i class="fas fa-laptop fa-4x mx-4"></i>
+						</div>
+					</section>
+				</div><!-- /.collapse -->
+			</div><!-- /.card -->
+			<div class="card">
+				<div class="card-header" role="tab" id="headingTwo">
+					<h5 class="mb-0">
+						<a class="collapsed text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+							<!-- アイテム2 -->
+							本格的な学習のきっかけ
+						</a>
+					</h5>
+				</div><!-- /.card-header -->
+				<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+					<div class="card-body">
+						<!-- アイテム2のコンテンツ -->
+						<p>
+							<span class="d-block mb-1">　僕は病院で理学療法士として患者様のリハビリをしています。リハビリでは患者様の身体機能を計測し、計測結果を元に計画を立てたり目標を決めたりするのですが、ある患者様の治療効果を検証するために、立位中の体の揺れを計測したいと考えました。</span><br>
+							<span class="d-block mb-1">　大学や研究施設では高価な床反力センサーを使用して計測されますが、病院には普通置いていません。そのためスマートフォンの加速度センサーを使用する事を思いつき、アプリ作製のためプログラミングを勉強しました。</span><br>
+							<span>　計測結果の解釈はさておき、プログラムを基礎から勉強しデバイスの機能を利用する事により目的を達成することができました。僕が何より心を動かされたのは、情報技術はどんな分野においても目的を達成するための強力なツールになりうる点です。その後もプログラミングの勉強を続けました。</span>
+						</p>
+					</div><!-- /.card-body -->
+					<section><!-- Notice icon -->
+						<div class="d-flex mb-0 align-items-end">
+							<i class="fas fa-diagnoses fa-4x mx-4"></i>
+						</div>
+					</section>
+				</div><!-- /.collapse -->
+			</div><!-- /.card -->
+			<div class="card">
+				<div class="card-header" role="tab" id="headingThree">
+					<h5 class="mb-0">
+						<a class="collapsed text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+							プログラマーへの転職動機
+						</a>
+					</h5>
+				</div><!-- /.card-header -->
+				<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+					<div class="card-body">
+						<p>
+							
+						</p>
+					</div><!-- /.card-body -->
+				</div><!-- /.collapse -->
+			</div><!-- /.card -->
+		</div><!-- /#accordion -->
+	</section>
+
 		<!-- Study -->
 		<section>
-			<div class="d-flex justify-content-center">
+			<div id="study" class="d-flex justify-content-center">
 				<!-- <i class="fas fa-feather-alt fa-4x mx-3"></i> -->
 				<p class="display-4 mb-5"><span class="border-bottom border-primary">Stady</span></p>
 			</div>
@@ -517,96 +618,6 @@
 			</div>
 		</div>
 	</section>
-
-	<!-- Notice -->
-	<section>
-		<div class="footer text-center mb-5">
-			<div class="container text-center">
-				<div class="d-flex justify-content-center border-bottom-dark">
-					<p class="display-4 mb-3"><span class="border-bottom border-success">NOTICE</span> </p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Notice icon -->
-	<section>
-		<div class="d-flex mb-0 align-items-end">
-			<i class="fas fa-hiking fa-4x mx-4"></i>
-		</div>
-	</section>
-
-	<!-- expection container -->
-	<section>
-		<div class="accordion mb-5" id="accordion" role="tablist" aria-multiselectable="true">
-			<div class="card">
-				<div class="card-header" role="tab" id="headingOne">
-					<h5 class="mb-0">
-						<a class="text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
-							<!-- アイテム1 -->
-							最初のプログラム
-						</a>
-					</h5>
-				</div><!-- /.card-header -->
-				<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-					<div class="card-body">
-						<!-- アイテム1のコンテンツ -->
-						<p>
-							<span class="d-block mb-1">　最初にプログラムを勉強したのは6年前、業務時間を短縮するためにVBA言語を使用した患者スケジュールの自動作成マクロを組もうと試みた時でした。</span><br>
-							<span class="d-block mb-1">　僕は単調な繰り返し作業が嫌いで、「この面倒な作業を短縮できるのならどれだけ時間を費やしてもかまわない。」と思いマクロとVBAの勉強をしたのですが、抽象的な要素が大きく関わり、なおかつ1週間ごとのイベントを手作業でインプットする必要があるため自動化できる行程が少なく断念しました。</span><br>
-							<span>　業務時間の短縮という目的は達成できませんでしたが、情報技術を学べば決められた行程を繰り返す作業は全てプログラムに置き換えられると感じました。</span>
-						</p>
-					</div><!-- /.card-body -->
-					<section><!-- Notice icon -->
-						<div class="d-flex mb-0 align-items-end">
-							<i class="fas fa-laptop fa-4x mx-4"></i>
-						</div>
-					</section>
-				</div><!-- /.collapse -->
-			</div><!-- /.card -->
-			<div class="card">
-				<div class="card-header" role="tab" id="headingTwo">
-					<h5 class="mb-0">
-						<a class="collapsed text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
-							<!-- アイテム2 -->
-							本格的な学習のきっかけ
-						</a>
-					</h5>
-				</div><!-- /.card-header -->
-				<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-					<div class="card-body">
-						<!-- アイテム2のコンテンツ -->
-						<p>
-							<span class="d-block mb-1">　僕は病院で理学療法士として患者様のリハビリをしています。リハビリでは患者様の身体機能を計測し、計測結果を元に計画を立てたり目標を決めたりするのですが、ある患者様の治療効果を検証するために、立位中の体の揺れを計測したいと考えました。</span><br>
-							<span class="d-block mb-1">　大学や研究施設では高価な床反力センサーを使用して計測されますが、病院には普通置いていません。そのためスマートフォンの加速度センサーを使用する事を思いつき、アプリ作製のためプログラミングを勉強しました。</span><br>
-							<span>　計測結果の解釈はさておき、プログラムを基礎から勉強しデバイスの機能を利用する事により目的を達成することができました。僕が何より心を動かされたのは、情報技術はどんな分野においても目的を達成するための強力なツールになりうる点です。その後もプログラミングの勉強を続けました。</span>
-						</p>
-					</div><!-- /.card-body -->
-					<section><!-- Notice icon -->
-						<div class="d-flex mb-0 align-items-end">
-							<i class="fas fa-diagnoses fa-4x mx-4"></i>
-						</div>
-					</section>
-				</div><!-- /.collapse -->
-			</div><!-- /.card -->
-			<div class="card">
-				<div class="card-header" role="tab" id="headingThree">
-					<h5 class="mb-0">
-						<a class="collapsed text-body d-block p-3 m-n3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-							プログラマーへの転職動機
-						</a>
-					</h5>
-				</div><!-- /.card-header -->
-				<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-					<div class="card-body">
-						<p>
-							
-						</p>
-					</div><!-- /.card-body -->
-				</div><!-- /.collapse -->
-			</div><!-- /.card -->
-		</div><!-- /#accordion -->
-	</section>
 	
 	<section>
 		<div class="container text-center mb-5">
@@ -636,7 +647,7 @@
 	</div>
 
 	<!-- お問い合わせフォーム 折り畳み -->
-	<div class="collapse" id="contact-form">
+	<div id="contact" class="collapse" id="contact-form">
 		<div class="card card-body border-light">
 			<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeLPQ8VwLUvH39_nmIcNskCU1yKRoaoRE0M2IX9mojIpydhjw/formResponse" class="form-horizontal" id="form" method="post" target="send">
 				<p class="h4 col mb-4 text-center">お問い合わせフォーム</p>
